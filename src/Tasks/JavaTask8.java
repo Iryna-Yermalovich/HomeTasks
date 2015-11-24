@@ -6,15 +6,14 @@ public class JavaTask8 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		double[] mas = new double[3];
-		int k;
-		double sum = 0.0;
+		int[] mas = new int[3];
+		int k, sum = 0;
 		while (true) {
 			try {
 				System.out.println("Enter three numbers: ");
 				for (int i = 0; i < mas.length; i++) {
 					if (sc.hasNextDouble()) {
-						mas[i] = Double.parseDouble(sc.nextLine());
+						mas[i] = Integer.parseInt(sc.nextLine());
 					}
 				}
 				System.out.println("Enter k: ");
