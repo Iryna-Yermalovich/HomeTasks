@@ -15,11 +15,11 @@ public class JavaTask10 {
 					int[][] mas = new int[n][n];
 					for (int i = 0; i < n; i++) {
 						for (int j = 0; j < n; j++) {
-							if (i % 2 > 0) {
-								mas[i][j] = n - j;
+							if (i % 2 == 0) {
+								mas[i][j] = j + 1;
 							}
 							else {
-								mas[i][j] = j + 1;
+								mas[i][j] = n - j;
 							}
 						}
 					}
