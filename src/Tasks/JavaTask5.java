@@ -20,6 +20,12 @@ public class JavaTask5 {
 			}
 		}
 		printMas(mas);
+		getResultMas(mas);
+		printMas(mas);
+		sc.close();
+	}
+	
+	public static void getResultMas(double[] mas){
 		for (int i = 0; i < mas.length; i++) {
 			if (mas[i] > 0) {
 				mas[i] = Math.pow(mas[i], 2);
@@ -27,8 +33,6 @@ public class JavaTask5 {
 				mas[i] = Math.pow(mas[i], 4);
 			}
 		}
-		printMas(mas);
-		sc.close();
 	}
 	
 	public static void printMas(double[] mas) {

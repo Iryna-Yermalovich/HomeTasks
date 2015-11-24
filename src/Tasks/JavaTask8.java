@@ -6,8 +6,8 @@ public class JavaTask8 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		int k;
 		int[] mas = new int[3];
-		int k, sum = 0;
 		while (true) {
 			try {
 				System.out.println("Enter three numbers: ");
@@ -25,15 +25,18 @@ public class JavaTask8 {
 				continue;
 			}
 		}
+		getSum(mas, k);
+		sc.close();
+	}
 
+	public static void getSum(int[] mas, int k) {
+		int sum = 0;
 		for (int i = 0; i < mas.length; i++) {
 			if (mas[i] % k == 0) {
 				sum += mas[i];
 			}
 		}
 		System.out.println("Sum = " + sum);
-
-		sc.close();
 	}
 
 }

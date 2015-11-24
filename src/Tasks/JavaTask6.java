@@ -6,7 +6,7 @@ public class JavaTask6 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		double a, b, c, min, max;
+		double a, b, c;
 		while (true) {
 			System.out.println("Enter a, b, c: ");
 			try {
@@ -19,13 +19,18 @@ public class JavaTask6 {
 				continue;
 			}
 		}
+		getSum(a, b, c);
+		sc.close();
+	}
 
+	public static void getSum(double a, double b, double c) {
+		double min, max;
 		// Easy way
 		min = Math.min(a, Math.min(b, c));
 		max = Math.max(a, Math.max(b, c));
 		System.out.println("Sum = " + (min + max));
 		///////////////////////////////////////////
-
+		
 		if (a < b && a < c) {
 			min = a;
 		} else if (c < a && c < b) {
@@ -40,8 +45,6 @@ public class JavaTask6 {
 		} else {
 			max = b;
 		}
-
 		System.out.println("Sum = " + (min + max));
-		sc.close();
 	}
 }

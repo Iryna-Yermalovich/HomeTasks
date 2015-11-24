@@ -7,7 +7,7 @@ public class JavaTask2 {
 
 	public static void main(String[] args) throws IOException {
 		Scanner sc = new Scanner(System.in);
-		double a, b, c, result;
+		double a, b, c;
 		while (true) {
 			System.out.println("Enter a, b, c: ");
 			try {
@@ -20,7 +20,12 @@ public class JavaTask2 {
 				continue;
 			}
 		}
-
+		getResult(a, b, c);
+		sc.close();
+	}
+	
+	public static void getResult(double a, double b, double c){
+		double result;
 		double d = Math.sqrt(Math.pow(b, 2) + 4 * a * c);
 		result = ((b + d) / (2 * a)) - (Math.pow(a, 3) * c + Math.pow(b, (-2)));
 		if (Double.isInfinite(result)) {
@@ -28,7 +33,5 @@ public class JavaTask2 {
 		} else {
 			System.out.printf("Result: %.4f\n", result);
 		}
-
-		sc.close();
 	}
 }

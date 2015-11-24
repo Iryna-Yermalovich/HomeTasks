@@ -28,6 +28,11 @@ public class JavaTask4 {
 				continue;
 			}
 		}
+		getAnswer(x, y);
+		sc.close();
+	}
+
+	public static void getAnswer(int x, int y){
 		if (((x >= -MIN_X1 && x <= MAX_X1) && (y >= MIN_Y1 && y <= MAX_Y1))) {
 			System.out.println("True");
 		}
@@ -37,7 +42,5 @@ public class JavaTask4 {
 		} else {
 			System.out.println("False");
 		}
-		sc.close();
 	}
-
 }
