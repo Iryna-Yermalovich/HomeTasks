@@ -12,10 +12,10 @@ public class JavaTask10 {
 				System.out.println("Enter N: ");
 				n = Integer.parseInt(sc.nextLine());
 				if (n % 2 == 0) {
-					double[][] mas = new double[n][n];
+					int[][] mas = new int[n][n];
 					for (int i = 0; i < n; i++) {
 						for (int j = 0; j < n; j++) {
-							if (i % 2 == 0) {
+							if (i % 2 > 0) {
 								mas[i][j] = n - j;
 							}
 							else {
